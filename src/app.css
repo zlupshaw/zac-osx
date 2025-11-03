@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+/* test color to verify Tailwind loads */
+body {
+	@apply bg-black text-white;
+}
+
+/* optional plugin */
+@plugin "@tailwindcss/typography";
