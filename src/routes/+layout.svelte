@@ -1,8 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-	import BootScreen from '$lib/components/Bootscreen.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Desktop from '$lib/components/Desktop.svelte';
+	import Bootscreen from '$lib/components/Bootscreen.svelte';
+
 	import { writable } from 'svelte/store';
 
 	const bootDone = writable(false);
@@ -15,7 +16,7 @@
 </svelte:head>
 
 {#if !$bootDone}
-	<BootScreen onFinish={() => bootDone.set(true)} />
+	<Bootscreen onFinish={() => bootDone.set(true)} />
 {:else}
 	<Desktop />
 {/if}
