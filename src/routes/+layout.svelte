@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import BootScreen from '$lib/components/BootScreen.svelte';
+	import BootScreen from '$lib/components/Bootscreen.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Desktop from '$lib/components/Desktop.svelte';
 	import { writable } from 'svelte/store';
